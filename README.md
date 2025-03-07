@@ -1,45 +1,49 @@
-# House Price Prediction
+## House Price Comparison: London vs. Istanbul
 
-## Project Overview
-This project aims to predict house prices using publicly available data from Kaggle. The objective is to apply data science methodologies, including data collection, cleaning, feature engineering, and machine learning modeling, to generate accurate price predictions.
+### Project Overview
+This project aims to compare house prices in two distinct locations: London (United Kingdom) and Istanbul (Turkey). By analyzing various factors influencing real estate prices, we seek to uncover trends and differences between these two markets.
 
-## Motivation
-House prices are influenced by various factors such as location, square footage, number of bedrooms, and market trends. Predicting house prices accurately can be beneficial for buyers, sellers, and real estate investors. This project will help in understanding the key features affecting house prices and improving predictive models for better decision-making.
+### Data Sources
+- **London House Prices**: Publicly available datasets from Kaggle and government sources.
+- **Istanbul House Prices**: Data collected from local real estate listings and open sources.
+- **Additional Data for Enrichment**:
+  - Economic indicators (GDP, inflation, interest rates)
+  - Crime rates
+  - Population density
+  - Average income levels
 
-## Data Source
-- **Primary Dataset**: The dataset is sourced from Kaggle, containing historical house sale prices along with relevant features.
-- **Additional Data**: To enrich the dataset, external sources such as economic indicators, inflation rates, or geographical features may be incorporated.
+### Methods
+1. **Data Collection & Preprocessing**
+   - Cleaning and handling missing data
+   - Standardizing formats for consistency
+2. **Feature Engineering**
+   - Creating new attributes (e.g., price per square meter, age of property)
+   - Enriching datasets with external economic and social factors
+3. **Exploratory Data Analysis (EDA)**
+   - Visualizing price distributions
+   - Comparing key metrics across locations
+4. **Statistical Analysis & Modeling**
+   - Identifying significant price drivers
+   - Evaluating correlations between different factors
 
-## Data Processing & Analysis
-1. **Data Cleaning**
-   - Handling missing values
-   - Removing outliers
-   - Standardizing formats
-2. **Exploratory Data Analysis (EDA)**
-   - Understanding feature distributions
-   - Correlation analysis
-   - Visualizing trends and patterns
-3. **Feature Engineering**
-   - Creating new features
-   - Encoding categorical variables
-   - Scaling numerical variables
-4. **Model Selection & Training**
-   - Comparing different machine learning models
-   - Hyperparameter tuning
-   - Performance evaluation using metrics such as RMSE
+### Expected Outcomes
+- A detailed comparison of house price trends between London and Istanbul
+- Insights into factors influencing real estate pricing in each location
+- Potential recommendations for buyers and investors
 
-## Findings
-- Key factors influencing house prices
-- Model performance insights
-- Unexpected correlations or patterns in the data
+### Tools & Technologies
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+- Jupyter Notebook
+- Data visualization libraries (Plotly, Folium for geospatial analysis)
 
-## Limitations & Future Work
-- **Limitations**
-  - Potential bias in the dataset
-  - Limited external factors considered
-- **Future Work**
-  - Incorporating more features (e.g., interest rates, neighborhood crime rates)
-  - Using deep learning models for improved accuracy
+### Next Steps
+- Finalize dataset selection and preprocessing
+- Perform initial data analysis and visualization
+- Develop predictive models to analyze price determinants
+
+### Contributors
+- Yunus Emre Gök
+
 
 
 
