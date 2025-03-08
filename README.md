@@ -32,6 +32,12 @@ I collected both data from Kaggle, and I will select the close dates for each da
 - Python (Pandas, NumPy, Scikit-learn)
 - Jupyter Notebook
 - Data visualization libraries (Matplotlib, Seaborn)
+- Hypothesis testing
+- Machine learning techniques 
+
+### Findings
+- Identification of key variables that strongly influence house prices in both cities, such as location, property size, building age, etc.
+- There may be significant price differences between similar properties in both cities
 
   
 ### Limitations and Future Work
@@ -41,7 +47,7 @@ I collected both data from Kaggle, and I will select the close dates for each da
 - The dataset may not fully capture seasonal fluctuations and emerging trends in the housing market.
 
 
-- #### Future Work
+ #### Future Work
 - Expanding the dataset to include more historical data for trend analysis.
 - Conducting deeper regional analysis within each city to compare different districts and their pricing dynamics.
 
