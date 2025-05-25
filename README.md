@@ -1,55 +1,79 @@
 ## House Price Comparison: London vs. Istanbul
 
 ### Project Overview
-This project aims to compare house prices in two distinct locations: London (United Kingdom) and Istanbul (Turkey). By analyzing various factors influencing real estate prices, I seek to uncover trends and differences between these two markets.
+This project aims to compare house prices in two distinct locations: **London (United Kingdom)** and **Istanbul (Turkey)**.  
+By analyzing various factors influencing real estate prices, I seek to uncover trends and differences between these two markets.
+
+---
 
 ### Data Sources
-I collected both data from Kaggle, and I will select the close dates for each data to cancel the effect of global inflation.
-- **London House Prices**: https://www.kaggle.com/datasets/jakewright/house-price-data
-- **Istanbul House Prices**: https://www.kaggle.com/datasets/aselasel/house-price-dataset
+Data was collected from Kaggle. To reduce the effect of global inflation, similar time frames were selected for both datasets.
 
+- **London House Prices**: [Kaggle Dataset](https://www.kaggle.com/datasets/jakewright/house-price-data)  
+- **Istanbul House Prices**: [Kaggle Dataset](https://www.kaggle.com/datasets/aselasel/house-price-dataset)
+
+---
 
 ### Methods
+
 1. **Data Collection & Preprocessing**
    - Cleaning and handling missing data
    - Standardizing formats for consistency
+   - Converting currencies (1 GBP = 20.38 TL for 2022)
 2. **Feature Engineering**
-   - Creating new attributes (e.g., price per square meter, age of property)
-   - Enriching datasets with external economic and social factors
+   - Creating new attributes (e.g., price per square meter)
+   - Potential enrichment with building age or neighborhood info
 3. **Exploratory Data Analysis (EDA)**
    - Visualizing price distributions
-   - Comparing key metrics across locations
+   - Correlation analysis
+   - Comparing features across cities
 4. **Statistical Analysis & Modeling**
    - Identifying significant price drivers
-   - Evaluating correlations between different factors
+   - Regression models: Linear Regression, Random Forest, XGBoost
+   - Evaluating with R², MAE, RMSE, MAPE
+
+---
 
 ### Expected Outcomes
-- A detailed comparison of house price trends between London and Istanbul
-- Insights into factors influencing real estate pricing in each location
-- Potential recommendations for buyers and investors
+- A comprehensive comparison of house pricing trends between Istanbul and London
+- Key drivers of house prices in each city
+- Practical insights for investors and home buyers
+
+---
 
 ### Tools & Technologies
-- Python (Pandas, NumPy, Scikit-learn)
-- Jupyter Notebook
-- Data visualization libraries (Matplotlib, Seaborn)
-- Hypothesis testing
-- Machine learning techniques 
+- **Python**: Pandas, NumPy, Scikit-learn  
+- **Notebook**: Jupyter  
+- **Visualization**: Matplotlib, Seaborn  
+- **ML Techniques**: Regression models, cross-validation  
+- **Statistical Analysis**: Hypothesis testing, correlation coefficients
+
+---
 
 ### Findings
-- Identification of key variables that strongly influence house prices in both cities, such as location, property size, building age, etc.
-- There may be significant price differences between similar properties in both cities
+- **London**: Strong correlation between house price and square meters  
+- **Istanbul**: Weaker correlation, likely due to missing features like location quality  
+- **Bathrooms**: Some predictive power, but less than area size  
+- Models predict London house prices more accurately due to higher-quality features
 
-  
+---
+
 ### Limitations and Future Work
+
 #### Limitations
-- Data availability and quality may vary between the two cities, leading to inconsistencies.
-- Some external factors (e.g., government policies, historical trends, zoning laws) are not accounted for in the analysis.
-- The dataset may not fully capture seasonal fluctuations and emerging trends in the housing market.
+- Limited or missing data on building age, location, and amenities
+- No inclusion of macroeconomic or zoning factors
+- Inflation normalization is approximate
+- No seasonality or time trend analysis
 
+#### Future Work
+- Incorporate regional details (district-level analysis)
+- Add new features such as age of the building, number of floors, and parking
+- Perform time-series modeling with historical data
+- Explore hedonic pricing models
 
- #### Future Work
-- Expanding the dataset to include more historical data for trend analysis.
-- Conducting deeper regional analysis within each city to compare different districts and their pricing dynamics.
+---
+
 
 
 
